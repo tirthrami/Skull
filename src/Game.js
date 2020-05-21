@@ -5,7 +5,7 @@ export function changeName(G, ctx, name) {
   G.players[ctx.currentPlayer].name = name;
 }
 export function playCard(G, ctx, card) {
-  var player = G.players[ctx.currentPlayer];
+  var player = G.players[ctx.playerID];
   if (player.cards.includes(card)) {
     let index = player.cards.indexOf(card);
     player.cards.splice(index, 1);
