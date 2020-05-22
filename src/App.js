@@ -6,10 +6,12 @@ import { SocketIO } from 'boardgame.io/multiplayer';
 
 import './App.css';
 import { Skull } from './Game';
+import { Board } from './Board';
 
 
 const SkullClient = Client({
   game: Skull,
+  board, Board,
   multiplayer: SocketIO({ server: 'localhost:8000' }),
 })
 
