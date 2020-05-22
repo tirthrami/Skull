@@ -13,6 +13,7 @@ export function playCard(G, ctx, card) {
     G.cardsOnTable[ctx.currentPlayer].playedCards.push({ type: card, flipped: false });
   }
 }
+//TODO: limit bet to max cards played
 export function placeBet(G, ctx, num) {
   var player = G.players[ctx.currentPlayer];
   if (num > 0 && (num > G.currentBet || G.currentBet == null)) {
