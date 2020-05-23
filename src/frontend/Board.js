@@ -6,10 +6,10 @@ export class Board extends React.Component {
     constructor(props){
         super(props);
         this.state = {state: props.G, playerID: props.playerID};
+        console.log(this.state);
     }
 
     componentDidMount(){
-
         this.setState(this.state);
     }
     shouldComponentUpdate(nextProps){

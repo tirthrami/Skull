@@ -6,7 +6,7 @@ import { SocketIO } from 'boardgame.io/multiplayer';
 
 import './App.css';
 import { Skull } from './Game';
-import { Board } from './Board';
+import { Board } from './frontend/Board';
 
 
 const SkullClient = Client({
