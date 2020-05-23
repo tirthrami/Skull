@@ -14,7 +14,7 @@ const SkullClient = Client({
   board: Board,
   multiplayer: SocketIO({ server: 'localhost:8000' }),
   debug: true,
-})
+});
 
 // const App = () => (
 //   <div>
